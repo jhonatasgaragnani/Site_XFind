@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%
+}
+   
+
+a, a:active, a:focus, a:hover, a:visited, input, select, textarea {
+    outline: 0;
+    text-decoration: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+li {
+    line-height: 1.8;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+p {
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+::-moz-selection {
+    color: #fff;
+    background: #666;
+}
+
+.intro-text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.list-item li {
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+/* ==============================================================
+   Demopage Index.html
+   ============================================================== */
+#demos-mp h4, #demos-op h4 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 40px;
+}
+.demo-title h4 a {
+    color: #666;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.demo-title h4 a:hover {
+    color: #ccc;
+}
+.demo-img {
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.demo-img:hover {
+    opacity: .7;
+}
+
+
+.logo{
+    width: 140px;
+    height: auto;
+}
+
+/*block*/
+.block-img {
+    padding: 80px 0 60px;
+}
+
+/*logo-contact*/
+.logo-contact{
+    width: 150px;
+    height: auto;
+}
+
+
+
+.cst-error.cst-danger {
+    color: red;
+    font-size:26px;
+}
+.cst-error.cst-success {
+    color: blue;
+    font-size:26px;
+}
+
