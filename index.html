@@ -8,7 +8,8 @@
     <title>XFind</title>
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link href="assets/css/bootstrap.css">
 
@@ -64,14 +65,17 @@
                 </li>
                 <li class="dropdown nav-item">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                        <i class="material-icons">apps</i>
+                        <i class="fas fa-bars fa-2x"></i>
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
                         <a href="login-page.html" class="dropdown-item">
-                            <i class="material-icons">lock_open</i> Login
+                            <i class="fas fa-sign-in-alt fa-1x"><span class="title"> Login</span></i>
                         </a>
-                        <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                            <i class="material-icons">content_paste</i> Test
+                        <a href="app/app.html" class="dropdown-item">
+                            <i class="fas fa-laptop-code fa-1x"><span class="title"> App</span></i>
+                        </a>
+                        <a href="app/app.html" class="dropdown-item">
+                            <i class="fas fa-gamepad fa-1x"><span class="title"> Game</span></i>
                         </a>
                     </div>
                 </li>
@@ -117,7 +121,10 @@
 
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    <iframe src="//player.vimeo.com/video/69593757" width="450" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    <video width="450" height="300" controls>
+                                        <source src="assets/video/output_free.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
                             </div>
                         </div>
