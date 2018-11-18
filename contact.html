@@ -59,11 +59,11 @@
                         <a class="nav-link" href="services.html" onclick="scrollToDownload()">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="scrollToDownload()">Contato</a>
+                        <a class="nav-link" href="contact.html" onclick="scrollToDownload()">Contato</a>
                     </li>
                     <li class="dropdown nav-item">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="fas fa-bars fa-2x"></i>
+                            <i class="fa fa-caret-circle-down"></i>
                         </a>
                         <div class="dropdown-menu dropdown-with-icons">
                             <a href="login-page.html" class="dropdown-item">
@@ -92,18 +92,40 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" target="_blank" data-original-title="Use nosso Chat">
+                            <i class="fa fa-comments" data-toggle="modal" data-target="#myModal"></i>
+                            <!-- The Modal -->
+                                <div class="modal fade text-right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        <!-- Modal Header -->
+                                            <div class="modal-body">
+                                                <div id="talkjs-container" style="width: 90%; margin: 5px; height: 400px"><i>Loading chat...</i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>
-
+</nav>
 
     <div id="navbar">
         <div class="navigation-example" style="background-image: url('assets/img/bg2.jpg');">
     </div>
 </div>
 
-<div class="main main-raised">
+<div class="main main-raised section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -112,7 +134,7 @@
                     <p class="mb-5 title">Entre em contato através do nosso e-mail ou telefone, faça seu orçamento!</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row section">
                 <div class="col-lg-4 ml-auto text-center title">
                     <i class="fa fa-whatsapp fa-2x"></i>
                     <p>
@@ -128,17 +150,10 @@
             </div>
 
 
-            <div class="container section">
-                <div class="row float">
-                    <div class="col-lg-8 mx-auto text-center">
-                    <input type="text" name="signup" id="signuptop" class="form-control cst-ctrl" placeholder="Insira seu E-mail">
-                    <input type="submit" class="btn btn-danger btn-lg" name="submit-btn" value="Inscreva-se!"  id="sub1" onclick="checkmail();">
-                    <div class="clearfix"></div>
-                    <span class="cst-error"></span>
-                    </div>
 
-                </div>
-            </div>
+
+
+
         </div>
 
 </div>
@@ -181,6 +196,8 @@
             </script>, Copyright <i class="material-icons"></i> by
             <a href="https://www.sites.xfind.com.br" target="_blank">X Find.inc</a>
         </div>
+
+
     </div>
 </footer>
 
