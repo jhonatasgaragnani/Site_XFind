@@ -14,27 +14,6 @@ function initMap() {
 
 
 
-function checkmail() {
-
-    var email = document.getElementById('signuptop');
-    if(email.value=='')
-    {
-        $('.cst-error').text('enter  email').show().addClass('cst-danger').removeClass('cst-success');
-        return false;
-    }
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if (!filter.test(email.value)) {
-        $('.cst-error').text('E-mail inválido!').show().addClass('cst-danger').removeClass('cst-success');
-
-        email.focus;
-        return false;
-    }
-    else{
-        $('.cst-error').text('Sucesso!').show().addClass('cst-success').removeClass('cst-danger');
-    }
-}
-
-
 <!-- minified snippet to load TalkJS without delaying your page -->
 
 (function(t,a,l,k,j,s){
@@ -43,15 +22,13 @@ function checkmail() {
                 .push([f])},catch:function(){return k&&new k()},c:l}};})(window,document,[]);
 
 
-<!-- TalkJS initialization code, which we'll customize in the next steps -->
-
 Talk.ready.then(function() {
     var me = new Talk.User({
         id: "123456",
-        name: "Alice",
-        email: "alice@example.com",
-        photoUrl: "https://demo.talkjs.com/img/alice.jpg",
-        welcomeMessage: "Hey there! How are you? :-)"
+        name: "X Find",
+        email: "sites.xfind@gmail.com",
+        photoUrl: "assets/img/xfind.jpg",
+        welcomeMessage: "Oi, tudo bem? Em que podemos ajudar?"
     });
     window.talkSession = new Talk.Session({
         appId: "tQEIzMQ1",
@@ -59,10 +36,10 @@ Talk.ready.then(function() {
     });
     var other = new Talk.User({
         id: "654321",
-        name: "Sebastian",
-        email: "Sebastian@example.com",
-        photoUrl: "https://demo.talkjs.com/img/sebastian.jpg",
-        welcomeMessage: "Hey, how can I help?"
+        name: "X Find",
+        email: "sites.xfind@gmail.com",
+        photoUrl: "assets/img/xfind.jpg",
+        welcomeMessage: "Olá, Como podemos ajudar?"
     });
 
     var conversation = talkSession.getOrCreateConversation(Talk.oneOnOneId(me, other))
