@@ -1,645 +1,200 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
 -->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Believe a Corporate Category Flat Bootstarp responsive Website Template| Home :: w3layouts</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Believe Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstarp-css -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstarp-css -->
-<!-- css -->
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!--// css -->
-<!--fonts-->
-<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
 
-	<link href="../../assets/css/style.css" rel="stylesheet">
-	<link href="../../assets/css/material-kit.css?v=2.0.4" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
 
+    <link rel="shortcut icon" href="images/favicon.png">
 
-	<div id="mybutton">
-		<a href="../../index.html">
-		<button type="button" class="btn btn-danger btn-circle btn-xl">
-			<i class="fa fa-undo-alt"></i>
-		</button>
-		</a>
-	</div>
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
 
-<!--/fonts-->
-<!--js-->
-<script src="js/jquery.min.js"></script>
-<!--/js-->
-</head>
-<body>
-<div id="home" class="header">
-	<div class="container">
-		<div class="header-info">
-			<div class="header-info-left">
-				<div class="logo">
-					<a href="#"><img src="images/logo.png" class="img-responsive" alt=""/></a>
-				</div>
-			</div>
-						<div class="header-info-right">
-							<div class="header cbp-spmenu-push">
-								<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-									<h3>MENU</h3>
-									<a class="scroll" href="#home">Home</a>
-									<a class="scroll" href="#about">About</a>
-									<a class="scroll" href="#portfolio">Portfolio</a>
-									<a class="scroll" href="#team">Team</a>
-									<a class="scroll" href="#price">price</a>
-									<a class="scroll" href="#Contact">Contact</a>
-								</nav>
-																<!--script-nav -->	
-			<script>
-					$("span.menu").click(function(){
-						$("ul.navigatoin").slideToggle("300" , function(){
-						});
-					});
-					</script>
-					<script type="text/javascript">
-							jQuery(document).ready(function($) {
-								$(".scroll").click(function(event){		
-									event.preventDefault();
-									$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-								});
-							});
-							</script>
-						<div class="clearfix"> </div>
-					<!-- /script-nav -->
-
-									<div class="main">
-										<section class="buttonset">
-											<button id="showRightPush">MENU</button>
-										</section>
-									</div>
-									<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-									<script src="js/classie.js"></script>
-									<script>
-										var	menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-											showRightPush = document.getElementById( 'showRightPush' ),
-											body = document.body;
-							
-										showRightPush.onclick = function() {
-											classie.toggle( this, 'active' );
-											classie.toggle( body, 'cbp-spmenu-push-toleft' );
-											classie.toggle( menuRight, 'cbp-spmenu-open' );
-											disableOther( 'showRightPush' );
-										};
-							
-									</script>
-			
-							</div>
-	
-						</div>
-									<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--header-banner-->
-<div class="header-banner">
-	<div class="container">
-		<div class="header-banner-info">
-			<h1>Many desktop publishing packages</h1>
-			<p>SIMPLICITY IS GOOD</p>
-		</div>
-		<a href="#" class="more">Learn More</a>
-	</div>
-</div>
-
-<!--/header-banner-->
-<!--content-start-here-->
-<!--introducing-->
-<div class="introducing">
-	<div class="container">
-		<div class="introducing-info">
-			<h2>BELIEVE</h2>
-			<p>Duis lobortis nisl sem, vel laoreet neque luctus rhoncus</p>
-				<h3>WE MAKE YOUR IDEAS</h3>
-		</div>
-	</div>
-</div>
-<div class="introducing-bottom">
-	<div class="container">
-		<p>Aenean quis metus vitae ipsum blandit semper. Nam elementum arcu vel ante convallis
-		 a luctus tellus vulputate. Nam ut mi maximus, placerat tellus et, ullamcorper purus.</p>
-	</div>
-</div>
-<!--/introducing-->
-<!-- about -->
-<div id="about" class="about">
-	<div class="container">
-		<div class="about-grids">
-			<div class="col-md-6 about-grid-left graphic">
-				<div class="about-img"></div>
-				<div class="about-right-info">
-					<h3>Graphic Design</h3>
-					<p>Lorem ipsum dolor sit amet, cu mea brute 
-						causae vivendum, qui graeci facete copiosae 
-						ad. Verear albucius suscipiantur ad cum, no 
-						ornatus recusabo pertinax es ne quod.
-					</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-6 about-grid-right">
-				<div class="about-img about-right-img"></div>
-				<div class="about-right-info about-right-right">
-					<h3>Web Design</h3>
-					<p>Lorem ipsum dolor sit amet, cu mea brute 
-						causae vivendum, qui graeci facete copiosae 
-						ad. Verear albucius suscipiantur ad cum, no 
-						ornatus recusabo pertinax es ne quod.
-					</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-			<div class="col-md-6 about-grid-left graphic">
-				<div class="about-img about-left-bottom"></div>
-				<div class="about-right-info">
-					<h3>Web Programing</h3>
-					<p>Lorem ipsum dolor sit amet, cu mea brute 
-						causae vivendum, qui graeci facete copiosae 
-						ad. Verear albucius suscipiantur ad cum, no 
-						ornatus recusabo pertinax es ne quod.
-					</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-6 about-grid-right">
-				<div class="about-img about-right-bottom"></div>
-				<div class="about-right-info about-right-right">
-					<h3>Full Support</h3>
-					<p>Lorem ipsum dolor sit amet, cu mea brute 
-						causae vivendum, qui graeci facete copiosae 
-						ad. Verear albucius suscipiantur ad cum, no 
-						ornatus recusabo pertinax es ne quod.
-					</p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!-- slid -->
-<!---->
-<script src="js/jquery.min.js"> </script>
-<script src="js/responsiveslides.min.js"></script>
- <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      $("#slider2").responsiveSlides({
-        auto: false,
-        pager: true,
-        speed: 300,
-        namespace: "callbacks",
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid">
+          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Coffee Pic</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+              <span class="visuallyhidden">add</span>
+            </button>
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+              <img src="images/logo.png">
+              +1,337
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+              <div>
+                <strong>The Newist</strong>
+              </div>
+              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+                <li class="mdl-menu__item">About</li>
+                <li class="mdl-menu__item">Message</li>
+                <li class="mdl-menu__item">Favorite</li>
+                <li class="mdl-menu__item">Search</li>
+              </ul>
+              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">more_vert</i>
+                <span class="visuallyhidden">show menu</span>
+              </button>
+            </div>
+          </div>
+          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">On the road again</a></h3>
+            </div>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__title mdl-color-text--grey-50">
+              <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+              <h3><a href="entry.html">Shopping</a></h3>
+            </div>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>The Newist</strong>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <nav class="demo-nav mdl-cell mdl-cell--12-col">
+            <div class="section-spacer"></div>
+            <a href="entry.html" class="demo-nav__button" title="show more">
+              More
+              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                <i class="material-icons" role="presentation">arrow_forward</i>
+              </button>
+            </a>
+          </nav>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+              <span class="visuallyhidden">Twitter</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+              <span class="visuallyhidden">Facebook</span>
+            </button>
+            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+              <span class="visuallyhidden">Google Plus</span>
+            </button>
+          </div>
+          <div class="mdl-mini-footer--right-section">
+            <button class="mdl-mini-footer--social-btn social-btn__share">
+              <i class="material-icons" role="presentation">share</i>
+              <span class="visuallyhidden">share</span>
+            </button>
+          </div>
+        </footer>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/blog/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--white">View Source</a>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
       });
     });
   </script>
- <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-<div class="portfolio">
-	 <div id="portfolio" class="container">
-			<div class="portfolio-heading">
-				<h3>OUR PORTFOLIO</h3>
-			</div>
-		  <div class="slider">
-				<ul class="rslides" id="slider2">
-				  <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/a2.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				 <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/a6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a2.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				 <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/a5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a2.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				  <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/a5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/a6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a2.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/a6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/a6.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				</ul>
-				   <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
-				<script type="text/javascript">
-				$(document).ready(function(){
-				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
-				});
-				</script>
-		  </div>
-	 </div>
-</div>
-<!---->
-
-<!-- /slid -->
-<!--portfolio-->
-<div id="team" class="services-bottom">
-		<div class="services-bottom-info">
-			<h3>OUR TEAM</h3>
-		</div>
-		<div class="container">
-			<div class="services-top">
-				<p>Lorem ipsum dolor sit amet, cu mea brute causae vivendum, qui graeci facete copiosae ad. Verear albucius 
-					suscipiantur ad cum, no ornatus recusabo pertinax est, ne quodsi aeterno sententiae eum. 
-					Nam in elaboraret comprehensam concludaturque. 
-</p>
-			</div>
-	</div>
-</div>
-<div class="elvis-grids">
-	<div class="container">
-		<div class="elvis-grids-info">
-			<div class="col-md-4 elvis-grid">
-				<img src="images/b1.jpg" class="img-responsive" alt=""/>
-				<div class="caption">
-					<h3>Duis nec congue</h3>
-					<span>Neque porro quisquam est qui dolorem </span>
-				</div>
-			</div>
-			<div class="col-md-4 elvis-grid">
-				<img src="images/b2.jpg" class="img-responsive" alt=""/>
-				<div class="caption">
-					<h3>Duis nec congue</h3>
-					<span>Neque porro quisquam est qui dolorem </span>
-				</div>
-			</div>
-			<div class="col-md-4 elvis-grid">
-				<img src="images/b3.jpg" class="img-responsive" alt=""/>
-				<div class="caption">
-					<h3>Duis nec congue</h3>
-					<span>Neque porro quisquam est qui dolorem </span>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--/portfolio-->
-<!--skills-->
-<div class="skills">
-	<div class="container">
-		<div class="skills-heading">
-			<h3>OUR SKILLS</h3>
-		</div>
-		<div class="skills-info">
-			<div id="canvas">
-							<div class="row skill-grids text-center">
-									<div class="col-md-3">	
-										<div class="skill-grid">
-											<div class="circle" id="circles-1"> </div>
-												<h5 class="web">HTML5</h5>
-										 </div>								  
-									</div>
-									<div class="col-md-3">	
-										<div class="skill-grid">
-											<div class="circle" id="circles-2"> </div>
-												<h5 class="web">Javascript</h5>
-										 </div>								  
-									</div>
-									<div class="col-md-3">	
-										<div class="skill-grid">
-											<div class="circle" id="circles-3"> </div>
-												<h5 class="web">PHP</h5>
-										 </div>								  
-									</div>
-									<div class="col-md-3">	
-										<div class="skill-grid">
-											<div class="circle" id="circles-4"> </div>
-												<h5 class="web">Adobe</h5>
-										 </div>								  
-									</div>
-									<div class="clearfix"> </div>
-					          </div>
-									  <script type="text/javascript" src="js/circles.js"></script>
-									 <script>
-										var colors = [
-												['#FFFFFF', '#202835'], ['#FFFFFF', '#202835'], ['#FFFFFF', '#202835'], ['#FFFFFF', '#202835']
-											];
-										for (var i = 1; i <= 6; i++) {
-											var child = document.getElementById('circles-' + i),
-												percentage = 50 + (i * 10);
-												
-											Circles.create({
-												id:         child.id,
-												percentage: percentage,
-												radius:     70,
-												width:      8,
-												number:   	percentage / 10,
-												text:       '%',
-												colors:     colors[i - 1]
-											});
-										}
-								
-						</script>
-					<!--/-->
-				</div>	
-		</div>
-	</div>
-</div>
-<div class="skills-bottom">
-	<div class="container">
-		<div class="skills-bottom-info">
-			<p>The design of each element should be thought out 
-				in order to be easy to make and easy to repair.</p>
-	</div>
-	<div class="clearfix"> </div>
-</div>
-</div>
-<!--/skills-->
-<!--price-->
-<div class="price-top">
-	<div class="container">
-		<div class="price-top-info">
-			<div class="col-md-3 price-slid">
-				<img src="images/c1.png" />
-			</div>
-			<div class="col-md-3 price-slid">
-				<img src="images/c2.png" />
-			</div>
-			<div class="col-md-3 price-slid">
-				<img src="images/c3.png" />
-			</div>
-			<div class="col-md-3 price-slid">
-				<img src="images/c6.png" />
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<div id="price" class="price">
-	<div class="prices">
-		<h3>OUR PRICE</h3>
-	</div>
-	<div class="container">
-		<div class="price-info">
-			<p>What is design? It's where you stand with a foot in two worlds - the world of technology and the world of people and 
-				human purposes - and you try to bring the two together.</p>
-		</div>
-		<div class="price-tags">
-			<div class="price-column">
-				<div class="price-col-top">
-					<h4>Web Design</h4>
-					<h5>start from:</h5>
-					<h3>199$</h3>
-					</div>
-					<div class="price-col-bottom">
-						<ul class="pr-list">
-							<li>Clean Code</li>
-							<li>HTML5&CSS3 Valid</li>
-							<li>Modern Design</li>
-							<li>Fully Animated</li>
-							<li>PHP Form</li>
-						</ul>
-						<a href="#">Buy</a>
-					</div>
-				
-				<div class="clearfix"> </div>
-			</div>
-			<div class="price-column">
-				<div class="price-col-top">
-					<h4>Web Design</h4>
-					<h5>start from:</h5>
-					<h3>180$</h3>
-					</div>
-					<div class="price-col-bottom">
-						<ul class="pr-list">
-							<li>Clean Code</li>
-							<li>HTML5&CSS3 Valid</li>
-							<li>Modern Design</li>
-							<li>Fully Animated</li>
-							<li>PHP Form</li>
-						</ul>
-						<a href="#">Buy</a>
-					</div>
-				
-				<div class="clearfix"> </div>
-			</div>
-			<div class="price-column">
-				<div class="price-col-top">
-					<h4>Web Design</h4>
-					<h5>start from:</h5>
-					<h3>175$</h3>
-					</div>
-					<div class="price-col-bottom">
-						<ul class="pr-list">
-							<li>Clean Code</li>
-							<li>HTML5&CSS3 Valid</li>
-							<li>Modern Design</li>
-							<li>Fully Animated</li>
-							<li>PHP Form</li>
-						</ul>
-						<a href="#">Buy</a>
-					</div>
-				
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!--/price-->
-<!--/Content-End-Here-->
-<!--contcct-us-->
-<div id="Contact" class="contact-us">
-	<div class="container">
-		<div class="contact-us-info">
-			<h3>NEWSLETTER</h3>
-			<p><span>Contact</span> Us and let us know if you have any questions.Don`t forget to subscribe for more awesome stuff by typing mail below</p>
-				<div class="contact-us-info-bottom">
-					<form>
-							<input type="text" class="text" value="Your Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Mail';}">
-							<input type="submit" value="Sign Up">
-						</form>
-				</div>
-		</div>
-	</div>
-</div>
-<div class="contact">
-		<div class="map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3004.1654951965356!2d-8.630227!3d41.15274!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1426136953803" frameborder="0" style="border:0"></iframe>
-			<div class="col-md-6 contact-info">
-				<h4>Address</h4>
-				<ul>
-					<li>cape town, georgia</li>
-					<li>New York,Dc 879</li>
-					<li>1 234 876 0987</li>
-					<li><a href="example@mail.com">Example@mail.com</a></li>
-				</ul>
-				<div class="contact-info-bottom">
-					<h5>Follow Us:</h5>
-				</div>
-				<div class="contact-icons">
-					<span class="icon1"> </span>
-					<span class="icon2"> </span>
-					<span class="icon3"> </span>
-					<span class="icon4"> </span>
-					<span class="icon5"> </span>
-					<span class="icon6"> </span>	
-					<div class="clearfix"> </div>												
-				</div>
-			</div>
-		</div>
-</div>
-
-<!--/contact-us-->
-<!--footer-->
-<div class="footer">
-	<div class="container">
-		<div class="footer-info">
-			<a href="#"><img src="images/logo.png"></a>
-		</div>
-		<div class="copy-rights">
-			<p>Design by<a href="http://w3layouts.com/"> W3layouts</a></p>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-</div>
-<!--/footer-->
-	</body>
 </html>

@@ -275,3 +275,30 @@ img{ max-width:100%;}
     line-height: 1.42857;
 }
 
+
+#mybutton2 {
+    position: fixed;
+    bottom: center;
+    right: 10px;
+}
+.btn-circle2.btn-xl {
+     width: 60px;
+     height: 60px;
+     padding: 10px 10px;
+     border-radius: 35px;
+     line-height: 1.33;
+ }
+ .btn-circle2.btn-xl:hover{
+     color: #7f0500;
+ }
+
+.btn-circle2 {
+    width: 20px;
+    height: 20px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
