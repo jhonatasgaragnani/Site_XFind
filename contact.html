@@ -14,8 +14,6 @@
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Material Kit CSS -->
@@ -35,7 +33,7 @@
 
 </head>
 <body class="profile-page sidebar-collapse">
-<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" id="sectionsNav">
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -49,48 +47,48 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                        <a class="nav-link" href="about.html" onclick="scrollToDownload()">Sobre</a>
+                    <a class="nav-link" href="about.html" onclick="scrollToDownload()">Sobre</a>
                 </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html" onclick="scrollToDownload()">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" onclick="scrollToDownload()">Contato</a>
-                    </li>
-                    <li class="dropdown nav-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                            <i class="fa fa-caret-circle-down"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" onclick="scrollToDownload()">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="scrollToDownload()">Contato</a>
+                </li>
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="fa fa-caret-circle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="login-page.html" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt fa-1x"><span class="title"> Login</span></i>
                         </a>
-                        <div class="dropdown-menu dropdown-with-icons">
-                            <a href="login-page.html" class="dropdown-item">
-                                <i class="fas fa-sign-in-alt fa-1x"><span class="title"> Login</span></i>
-                            </a>
-                            <a href="app/app.html" class="dropdown-item">
-                                <i class="fas fa-laptop-code fa-1x"><span class="title"> App</span></i>
-                            </a>
-                            <a href="game/game.html" class="dropdown-item">
-                                <i class="fas fa-gamepad fa-1x"><span class="title"> Game</span></i>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://wa.me/5543996363496?text=Bem-vindo%20à%20XFind.%20Gostaria%20de%20um%20orçamento?" target="_blank" data-original-title="Menssagem no Whatsapp">
-                            <i class="fa fa-whatsapp"></i>
+                        <a href="app/app.html" class="dropdown-item">
+                            <i class="fas fa-laptop-code fa-1x"><span class="title"> App</span></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/Xfind-578953055803572/" target="_blank" data-original-title="Curta no Facebook">
-                            <i class="fa fa-facebook-square"></i>
+                        <a href="game/game.html" class="dropdown-item">
+                            <i class="fas fa-gamepad fa-1x"><span class="title"> Game</span></i>
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/sites.xfind/?hl=pt-br" target="_blank" data-original-title="Siga-nos no Instagram">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://wa.me/5543996363496?text=Bem-vindo%20à%20XFind.%20Gostaria%20de%20um%20orçamento?" target="_blank" data-original-title="Menssagem no Whatsapp">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/Xfind-578953055803572/" target="_blank" data-original-title="Curta no Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/sites.xfind/?hl=pt-br" target="_blank" data-original-title="Siga-nos no Instagram">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
+    </div>
 </nav>
 
     <div id="navbar">
@@ -157,13 +155,14 @@
                         </div>
                         <!-- Modal Header -->
                         <div class="modal-body">
-                            <div id="talkjs-container" style="width: 90%; margin: 5px; height: 400px"><i>Loading chat...</i></div>
+                            <div id="talkjs-container" style="width: 100%; margin: 5px; height: 400px"><i>Loading chat...</i></div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+</div>
 
 </div>
 
